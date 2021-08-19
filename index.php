@@ -20,9 +20,11 @@ if (isset($_SESSION["UID"])!=null) {
     switch ($param) {
       case 'mydiary':{
         $filename = "diary";
-        $diary = isset($_POST['diary'])?addslashes(strip_tags(trim($_POST['diary']))):null;
-        $query = "UPDATE `users` SET `diary`= '$diary' where `id` = '$uid'";
-        $result = mysqli_query($con, $query);
+        if(isset($_POST['hiddeninput'])){
+          $diary = isset($_POST['diary'])?addslashes(strip_tags(trim($_POST['diary']))):null;
+          $query = "UPDATE `users` SET `diary`= '$diary' where `id` = '$uid'";
+          $result = mysqli_query($con, $query);
+        }
       }
       break;
     }
