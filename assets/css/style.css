@@ -1,0 +1,177 @@
+/* -----------------------{CSS RESEt}--------------------------------- */
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    outline : none;
+    text-decoration: none;
+    font-family: Poppins-Regular, sans-serif;
+    font-size: 15px;
+	  line-height: 1.7;
+    color: #2b0606;
+    border : none;
+}
+
+body{
+  background : #340084;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+button{
+    cursor : pointer;
+    background-color: rgba(19, 33, 226, 0.76);
+    color : white;
+    margin : 15px;
+    font-family: Poppins-Medium;
+    font-size  : 1.2rem;
+    font-weight : ;
+    border-radius: 25px;
+    height : 50px;
+    width : 80%;
+    box-shadow : inset 0 0 15px rgb(3, 14, 163);
+}
+
+button:hover{
+  background-color: rgba(34, 47, 236, 0.801);
+}
+
+/* ======================================================================= */
+
+
+
+/* -------------------------------[ FONT ]-------------------------------- */
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../fonts/poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('../fonts/poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('../fonts/poppins/Poppins-Medium.ttf');
+}
+/* =============================================================================== */
+
+
+
+/* =========================={ Utilities } =============================== */
+.flex{
+    display : flex;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-center{
+    justify-content : center;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap{
+    flex-wrap : wrap;
+}
+
+/* =============================================================================== */
+.main-container{
+    padding : 0 2rem;
+    min-height : 100vh;
+    width : 100vw;
+    overflow-x : hidden;
+}
+
+.logo-container{
+  width : 200px;
+  margin : 50px;
+}
+
+.box-wrapper{
+  position : relative;
+}
+
+.box-container {
+    background: rgb(255 255 255 / 28%);
+    border-radius: 20px;
+    padding: 1rem 0;
+    box-shadow: 0px 0px 11px -1px rgb(0 0 0 / 44%);
+    max-width: 900px;
+}
+
+/* .signin{
+  position: absolute;
+  opacity : 0;
+  transition: 0.2s;
+} */
+
+.tilt-pic {
+  max-width : 220px;
+  margin : 2rem;
+}
+
+.tilt-pic img {
+  max-width: 100%;
+}
+
+.form-box{
+  min-width : 300px;
+  margin : 2rem;
+}
+
+.form-box .input-wrapper{
+  margin : 10px;
+}
+
+.input {
+  font-family: Poppins-Medium;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666666;
+  display: block;
+  width: 100%;
+  background: #e6e6e6;
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 30px;
+}
+
+.form-box .form-title{
+  font-size: 2rem;
+  font-family: Poppins-Bold;
+  color : rgb(250, 250, 160);
+  text-shadow: 1px 1px 3px black;
+}
+
+textarea{
+  max-width: 900px;
+  min-width : 350px;
+  min-height : 400px;
+  font-size : 1.2rem;
+  padding : 0 1rem;
+}
+
+
+@media(max-width : 400px){
+  .form-box{
+    margin : 1rem;
+  }
+}
