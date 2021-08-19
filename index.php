@@ -8,6 +8,8 @@ $filename = "mainlogin";
 
 if (isset($_SESSION["UID"])!=null) {
   $uid = $_SESSION["UID"];
+?>
+<?php
   // user loged in check time status and allow to move ahead
   if (isset($_GET)) {
     foreach ($_GET as $key => $valuein) {
