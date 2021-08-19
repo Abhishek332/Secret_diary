@@ -10,6 +10,7 @@
 
 <body>
 	<div class="main-container flex flex-col items-center">
+		<div class="logout"><img src="assets/images/logout.png" alt=""></div>
 		<div class="logo-container flex flex-center">
 	      <img class="logo" src="assets/images/logo.png" alt="logo is not available" width="auto" height="100">
 	    </div>

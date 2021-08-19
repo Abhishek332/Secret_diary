@@ -100,13 +100,23 @@ button:hover{
     overflow-x : hidden;
 }
 
+.logout{
+  position : relative;
+  height : 3rem;
+  width : 3rem;
+  margin : 20px 0px -70px auto;
+  cursor : pointer;
+}
+
+.logout img{
+  position : absolute;
+  height : 100%;
+  width : 100%;
+}
+
 .logo-container{
   width : 200px;
   margin : 50px;
-}
-
-.box-wrapper{
-  position : relative;
 }
 
 .box-container {
@@ -114,17 +124,22 @@ button:hover{
     border-radius: 20px;
     padding: 1rem 0;
     box-shadow: 0px 0px 11px -1px rgb(0 0 0 / 44%);
-    max-width: 900px;
+    position : relative;
+    overflow: hidden;
 }
 
-/* .signin{
+.sign{
+  transition: all 0.6s cubic-bezier(.37,1.14,.26,1.24);
+}
+
+#signin{
   position: absolute;
-  opacity : 0;
-  transition: 0.2s;
-} */
+  transform: translateX(80%);
+  opacity: 0;
+}
 
 .tilt-pic {
-  max-width : 220px;
+  width : 220px;
   margin : 2rem;
 }
 
@@ -162,13 +177,11 @@ button:hover{
 }
 
 textarea{
-  max-width: 900px;
-  min-width : 350px;
+  width : 90vw;
   min-height : 400px;
   font-size : 1.2rem;
-  padding : 0 1rem;
+  padding : 2rem;
 }
-
 
 @media(max-width : 400px){
   .form-box{
