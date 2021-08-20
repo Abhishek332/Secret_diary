@@ -13,7 +13,7 @@
         <input class="input" type="password" name="s-password" placeholder="Enter password here" required>
       </div>
 		  <button type="submit" name="signup">Continue</button>
-      <p id="signincall" style="color : white;">Go to <span style="color : yellow; font-weight : bold">SignIn</span></p>
+      <p id="signincall" style="color : white;">Go to <span style="color : #f2f2a3; font-weight : bold">SignIn</span></p>
 	  </form>
   </div>
 
@@ -31,7 +31,7 @@
         <input class="input" type="password" name="password" placeholder="Enter password here" required>
       </div>
 		  <button type="submit" name="signin">Continue</button>
-      <p id="signupcall" style="color : white;">Go to <span style="color : yellow; font-weight : bold">SignUp</span></p>
+      <p id="signupcall" style="color : white;">Go to <span style="color : #f2f2a3; font-weight : bold">SignUp</span></p>
 	  </form>
   </div>
 </div>
